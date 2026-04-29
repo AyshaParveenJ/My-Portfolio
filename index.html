@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIML Student Portfolio | Aysha Parveen J</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <style>
+        /* Temporarily inline style for the mobile toggle button icon */
+        @media (max-width: 768px) {
+            .navbar {
+                position: relative; /* Adjust position for the toggle button */
+            }
+            .navbar .menu-toggle {
+                display: block;
+                position: absolute;
+                right: 50px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="navbar" role="banner">
+        <div class="logo">Portfolio</div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero-section" id="home" role="main">
+        <div class="content-left">
+            <p class="greeting">Hello, It's Me</p>
+            <h1>Aysha Parveen J</h1>
+            <h2>And I'm a <span class="typing-text"></span><span class="cursor">|</span></h2> 
+            
+            <p class="description">
+                I'm an AIML Undergraduate focused on creating intelligent solutions. I combine strong analytical logic with modern website design principles to build dynamic, functional, and user-focused digital experiences.
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aysha-parveen-j-784b61383" class="social-icon" target="_blank" aria-label="LinkedIn" title="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/AyshaParveenJ" class="social-icon" target="_blank" aria-label="GitHub" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/u/AyshaParveen/" class="social-icon" target="_blank" aria-label="LeetCode" title="LeetCode Profile"><i class="fas fa-code"></i></a>
+                <a href="https://www.codechef.com/users/aysha_parveen" class="social-icon" target="_blank" aria-label="CodeChef" title="CodeChef Profile"><i class="fas fa-laptop-code"></i></a>
+                <a href="https://www.hackerrank.com/profile/ayshaparveen_j" class="social-icon" target="_blank" aria-label="HackerRank" title="HackerRank Profile"><i class="fab fa-hackerrank"></i></a>
+            </div>
+
+            <a href="#about" class="btn-primary more-about-btn">
+                More About Me
+            </a>
+            
+        </div>
+        <div class="content-right">
+            <div class="image-container">
+                <img src="Portfolio photo.jpeg" alt="Professional headshot of Aysha Parveen J">
+            </div>
+        </div>
+    </main>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="content-left about-image-col"> 
+            <div class="image-container about-image-container">
+                <img src="Portfolio photo.jpeg" alt="About Profile Picture">
+            </div>
+        </div>
+        
+        <div class="content-right about-text-col">
+            <h2 class="section-title" id="about-title">About<span class="highlight">Me</span></h2>
+            <h3 class="tagline">Machine Learning Engineer!</h3>
+            
+            <p class="about-description">
+                I'm a motivated Artificial Intelligence and Machine Learning student passionate about building intelligent, real-world solutions. I combine a strong analytical foundation in Data Structures, Algorithms, and ML principles with practical development skills in Python, Java, and web technologies (HTML/CSS/JS). Proficient in UI/UX design, I'm driven to create dynamic, functional digital experiences that are not just smart, but also intuitive and highly user-friendly.
+            </p>
+            
+            <a href="AYSHA (RESUME).pdf" download class="btn-primary cv-download-btn">
+                Download CV <i class="fas fa-download"></i>
+            </a>
+            
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <h2 class="section-title center-title">My <span class="highlight">Skills</span></h2>
+        
+        <div class="skills-container-layout">
+            
+            <div class="technical-skills-column">
+                <h3 class="skills-subtitle">Technical <span class="highlight">Skills</span></h3>
+                
+                <div class="technical-skills-grid"> 
+                    
+                    <div class="skill-box" data-percent="90">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-html5-plain colored"></i> HTML</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box" data-percent="80">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-css3-plain colored"></i> CSS</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box" data-percent="85">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-javascript-plain colored"></i> Javascript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-box" data-percent="90">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-python-plain colored"></i> Python</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box" data-percent="85">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-c-plain colored"></i> C</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box" data-percent="75">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-box" data-percent="80">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-java-plain colored"></i> Java</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-box" data-percent="70">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-mysql-plain-wordmark colored"></i> SQL</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="professional-skills-column">
+                <h3 class="skills-subtitle">Professional <span class="highlight">Skills</span></h3>
+                <div class="professional-skills-grid">
+                    
+                    <div class="professional-skill-box" data-percent="90">
+                        <div class="circle-wrap">
+                            <div class="circle">
+                                <svg width="100" height="100" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="#1a2c48" stroke-width="10"></circle>
+                                    <circle class="circle-progress" cx="50" cy="50" r="45" fill="none" stroke="var(--primary-color)" stroke-width="10" stroke-linecap="round"></circle>
+                                </svg>
+                                <div class="percentage-text">90%</div>
+                            </div>
+                        </div>
+                        <span class="skill-label">Creativity</span>
+                    </div>
+
+                    <div class="professional-skill-box" data-percent="65">
+                        <div class="circle-wrap">
+                            <div class="circle">
+                                <svg width="100" height="100" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="#1a2c48" stroke-width="10"></circle>
+                                    <circle class="circle-progress" cx="50" cy="50" r="45" fill="none" stroke="var(--primary-color)" stroke-width="10" stroke-linecap="round"></circle>
+                                </svg>
+                                <div class="percentage-text">65%</div>
+                            </div>
+                        </div>
+                        <span class="skill-label">Communication</span>
+                    </div>
+
+                    <div class="professional-skill-box" data-percent="75">
+                        <div class="circle-wrap">
+                            <div class="circle">
+                                <svg width="100" height="100" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="#1a2c48" stroke-width="10"></circle>
+                                    <circle class="circle-progress" cx="50" cy="50" r="45" fill="none" stroke="var(--primary-color)" stroke-width="10" stroke-linecap="round"></circle>
+                                </svg>
+                                <div class="percentage-text">75%</div>
+                            </div>
+                        </div>
+                        <span class="skill-label">Problem Solving</span>
+                    </div>
+
+                    <div class="professional-skill-box" data-percent="85">
+                        <div class="circle-wrap">
+                            <div class="circle">
+                                <svg width="100" height="100" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="#1a2c48" stroke-width="10"></circle>
+                                    <circle class="circle-progress" cx="50" cy="50" r="45" fill="none" stroke="var(--primary-color)" stroke-width="10" stroke-linecap="round"></circle>
+                                </svg>
+                                <div class="percentage-text">85%</div>
+                            </div>
+                        </div>
+                        <span class="skill-label">Teamwork</span>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <h2 class="section-title center-title">Featured <span class="highlight">Projects</span></h2>
+        
+        <div class="project-grid">
+            
+            <div class="project-item active"> 
+                <img src="Sentiment_photo.png" alt="Sentiment Analysis Project">
+                
+                <div class="project-overlay">
+                    <div class="overlay-content">
+                        <button class="overlay-close-btn"><i class="fas fa-times"></i></button>
+
+                        <h3>Sentiment Analysis using NLP</h3>
+                        <p>Built a Bi-LSTM model to classify customer reviews, achieving 90% accuracy. Deployed as a microservice using Python and Flask. Focused on data preprocessing and model optimization for real-time inference.</p>
+                      
+
+                        <a href="https://github.com/AyshaParveenJ/Sentiment-Analysis-Dashboard/tree/main/src" class="btn-primary" target="_blank">View GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <img src="Sentiment_photo.jpg" alt="House Price Prediction Project">
+                
+                <div class="project-overlay">
+                    <div class="overlay-content">
+                        <button class="overlay-close-btn"><i class="fas fa-times"></i></button>
+
+                        <h3>Real Estate Price Predictor</h3>
+                        <p>Applied Linear Regression and Random Forest models on Kaggle data. Implemented robust feature scaling and selection to minimize overfitting. The goal was to provide accurate property valuation estimates.</p>
+                        
+
+                        <a href="#" class="btn-primary" target="_blank">View GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <img src="project-placeholder.jpg" alt="Web Development Project">
+                
+                <div class="project-overlay">
+                    <div class="overlay-content">
+                        <button class="overlay-close-btn"><i class="fas fa-times"></i></button>
+
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Designed and developed this responsive portfolio using modern HTML5 semantics, custom CSS animations, and JavaScript APIs (Intersection Observer). Features a dark, neon-accented, and highly interactive design.</p>
+                        
+                        
+
+                        <a href="#" class="btn-primary" target="_blank">View Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2 class="section-title center-title">Get In <span class="highlight">Touch</span></h2>
+        
+        <div class="contact-container">
+            
+            <form 
+                class="contact-form" 
+                action="https://formspree.io/f/xrbyjazn" 
+                method="POST"
+            >
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="hidden" name="_subject" value="New Portfolio Message from Aysha Parveen J">
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            
+            <div class="contact-details">
+                <p><i class="fas fa-envelope highlight"></i> ayshaparveen.j@email.com</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/aysha-parveen-j-784b61383" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin-in highlight"></i> /in/aysha-parveen-j-784b61383
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2025 Aysha Parveen J. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle Logic
+            const nav = document.querySelector('.navbar nav');
+            const toggle = document.querySelector('.menu-toggle');
+            
+            if (toggle) {
+                toggle.addEventListener('click', () => {
+                    nav.classList.toggle('mobile-active');
+                    // Change icon to close (X) when menu is open
+                    const icon = toggle.querySelector('i');
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                });
+                
+                // Close menu when a link is clicked (mobile UX)
+                document.querySelectorAll('.navbar nav ul li a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (nav.classList.contains('mobile-active')) {
+                             nav.classList.remove('mobile-active');
+                             toggle.querySelector('i').classList.remove('fa-times');
+                             toggle.querySelector('i').classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // 1. Typewriter Effect
+            const roles = ["Machine Learning Engineer", "AI/ML Undergraduate", "Data Analyst", "Web Developer"];
+            let roleIndex = 0;
+            let charIndex = 0;
+            const typingTextElement = document.querySelector('.typing-text');
+            const typingDelay = 100;
+            const erasingDelay = 50;
+            const newRoleDelay = 2000;
+            const startTypingDelay = 500;
+
+            function type() {
+                if (charIndex < roles[roleIndex].length) {
+                    typingTextElement.textContent += roles[roleIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, typingDelay);
+                } else {
+                    setTimeout(erase, newRoleDelay);
+                }
+            }
+
+            function erase() {
+                if (charIndex > 0) {
+                    typingTextElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                    setTimeout(erase, erasingDelay);
+                } else {
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    setTimeout(type, typingDelay + startTypingDelay); 
+                }
+            }
+
+            if (roles.length > 0) {
+                setTimeout(type, 1000); 
+            }
+
+            // 2. Skill Animation (Animate on Scroll using Intersection Observer)
+            
+            // Function to animate horizontal bars
+            function animateSkillBar(element) {
+                const percent = element.getAttribute('data-percent');
+                const progressBar = element.querySelector('.skill-progress');
+                progressBar.style.width = percent + '%';
+            }
+
+            // Function to animate circular progress
+            function animateCircle(element) {
+                const percent = element.getAttribute('data-percent');
+                const circleProgress = element.querySelector('.circle-progress');
+                const radius = 45; // Based on r="45" in SVG
+                const circumference = 2 * Math.PI * radius; 
+                
+                circleProgress.style.strokeDasharray = circumference; 
+
+                const offset = circumference - (percent / 100) * circumference;
+                circleProgress.style.strokeDashoffset = offset;
+            }
+
+            // Intersection Observer Setup
+            const observerOptions = {
+                root: null, 
+                rootMargin: '0px',
+                threshold: 0.3 // Animation starts when 30% of element is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        
+                        if (element.classList.contains('skill-box')) {
+                            animateSkillBar(element);
+                        } else if (element.classList.contains('professional-skill-box')) {
+                            animateCircle(element);
+                        }
+                        
+                        observer.unobserve(element);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all skill boxes
+            document.querySelectorAll('.skill-box').forEach(box => {
+                observer.observe(box);
+            });
+            document.querySelectorAll('.professional-skill-box').forEach(box => {
+                observer.observe(box);
+            });
+
+            // 3. Project Description Toggle (Overlay Pop/Slide)
+            document.querySelectorAll('.project-item').forEach(item => {
+                // 1. Click anywhere on the card to open the overlay
+                item.addEventListener('click', (event) => {
+                    // Only open if the click target is NOT the close button itself
+                    // and NOT the link (to allow the link to navigate)
+                    if (!event.target.closest('.overlay-close-btn') && !event.target.closest('.btn-primary')) {
+                         item.classList.add('active');
+                    }
+                });
+
+                // 2. Click the close button to hide the overlay
+                const closeBtn = item.querySelector('.overlay-close-btn');
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', (event) => {
+                        event.stopPropagation(); // Prevents the click from bubbling up to the card
+                        item.classList.remove('active');
+                    });
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
