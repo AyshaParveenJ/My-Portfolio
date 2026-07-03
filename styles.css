@@ -345,12 +345,15 @@ body {
         0 0 15px rgba(0, 0, 0, 0.5), 
         0 0 30px rgba(0, 0, 0, 0.3); 
     animation: neon-glow 5s ease-in-out infinite alternate;
+    overflow: hidden;
 }
 
 .image-container img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     border-radius: 50%;
     border: 10px solid var(--background-color); 
 }
@@ -403,8 +406,9 @@ body {
 }
 
 .skills-container-layout {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
     gap: 50px;
     max-width: 1200px;
     margin: 50px auto 0;
@@ -413,8 +417,10 @@ body {
 
 .technical-skills-column,
 .professional-skills-column {
-    width: 50%;
+    width: 100%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .skills-subtitle {
@@ -430,7 +436,9 @@ body {
 .technical-skills-grid { 
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 30px; /* Gap between skill boxes */
+    column-gap: 30px;
+    row-gap: 40px;
+    flex: 1;
 }
 
 .skill-box {
@@ -484,7 +492,10 @@ body {
 .professional-skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 40px;
+    align-content: space-between;
+    flex: 1;
     text-align: center;
 }
 
@@ -546,7 +557,7 @@ body {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 40px;
     max-width: 1200px;
     margin: 50px auto 0;
@@ -569,6 +580,9 @@ body {
     animation: float 4s ease-in-out infinite alternate; 
     
     text-align: left;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
 }
 
 .project-item:hover {
@@ -582,6 +596,12 @@ body {
     height: 100%; /* Important: takes full height of the item */
     object-fit: cover;
     display: block;
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover img,
+.project-item:focus img {
+    transform: scale(1.08);
 }
 
 /* Hides the old project-info padding/box */
@@ -601,7 +621,7 @@ body {
     height: 100%;
     
     /* Semi-transparent background (exactly as requested) */
-    background-color: rgba(17, 34, 64, 0.95); 
+    background-color: rgba(10, 25, 47, 0.78); 
     
     display: flex;
     justify-content: center;
@@ -609,7 +629,7 @@ body {
     
     /* Initial state: Hidden and moved down */
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(20px);
     
     /* Transition for slide/pop effect */
     transition: opacity 0.5s ease, transform 0.5s ease; 
@@ -653,26 +673,9 @@ body {
     margin: 5px;
 }
 
-/* Close Button (X) */
-.overlay-close-btn {
-    position: absolute;
-    top: 0; 
-    right: 0;
-    background: transparent;
-    border: none;
-    color: var(--secondary-color);
-    font-size: 1.5em;
-    cursor: pointer;
-    transition: color 0.3s;
-    z-index: 60;
-}
-
-.overlay-close-btn:hover {
-    color: var(--text-color);
-}
-
 /* --- Active State (The Show/Pop Effect) --- */
-.project-item.active .project-overlay {
+.project-item:hover .project-overlay,
+.project-item:focus .project-overlay {
     opacity: 1;
     transform: translateY(0); /* Slides/Pops up into view */
 }
@@ -798,7 +801,7 @@ body {
     
     /* Skills Section stacking for tablet view */
     .skills-container-layout {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 40px;
     }
     .technical-skills-column,
@@ -809,7 +812,12 @@ body {
 
     .technical-skills-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        column-gap: 20px;
+        row-gap: 34px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -883,6 +891,10 @@ body {
 
     .professional-skills-grid {
         grid-template-columns: 1fr; /* Stack circular skills vertically */
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 
     /* Contact Section Mobile Adjustments */
